@@ -1,0 +1,100 @@
+{
+  "_comment": "Copy this file to linkedin_config.json and fill in your own values. linkedin_config.json is gitignored and never committed. Keys starting with an underscore are notes and are ignored by the agent.",
+  "environment": {
+    "runPlaywrightHeadless": false
+  },
+  "search": {
+    "_keywords_comment": "Ordered list, searched one at a time. The agent starts at the top and offers the next one when you want more. Put the phrases employers actually use as job titles first.",
+    "keywords": ["Your Job Title 1", "Your Job Title 2", "Related Search Term"],
+    "location": "Your City, Province/State",
+    "distance_km": 50,
+    "postedWithinSeconds": 36000,
+    "filterToLinkedInApplyOnly": true
+  },
+  "workflowPreferences": {
+    "approvalCommands": ["go", "apply"],
+    "followCompanyOnApply": false,
+    "verificationPopups": {
+      "action": "dismiss",
+      "buttonToClick": "Not Now"
+    }
+  },
+  "filters": {
+    "excludedEmployers": [],
+    "excludedTitleKeywords": ["co-op", "intern", "internship"],
+    "excludedCompensationTypes": ["commission-only", "unpaid", "volunteer"],
+    "descriptionExclusions": {
+      "languageRequirements": [],
+      "technicalRequirements": [],
+      "platformExclusions": []
+    },
+    "preferredKeywords": [],
+    "excludedEmploymentTypes": [],
+    "minSalaryCAD": null
+  },
+  "personal": {
+    "fullName": "Your Name",
+    "email": "you@example.com",
+    "phone": "0000000000",
+    "city": "Your City",
+    "province": "Your Province/State",
+    "country": "Your Country",
+    "linkedinUrl": "www.linkedin.com/in/yourprofile",
+    "portfolioOrGithubUrl": ""
+  },
+  "resumes": [
+    {
+      "label": "A short name you choose - not restricted to any particular vocabulary (e.g. 'QA', 'Design', 'Ops', whatever fits your situation)",
+      "filePath": "C:\\path\\to\\Resume-VariantA.pdf",
+      "useWhen": "Describe what kind of posting this resume fits - the agent matches postings against this text to pick the right resume"
+    },
+    {
+      "label": "Another label of your choosing",
+      "filePath": "C:\\path\\to\\Resume-VariantB.pdf",
+      "useWhen": "Describe what kind of posting this second resume fits"
+    }
+  ],
+  "workAuthorization": {
+    "authorizedToWorkInCountry": true,
+    "requiresSponsorship": false,
+    "willingToRelocate": true
+  },
+  "workArrangement": {
+    "acceptRemote": true,
+    "acceptHybrid": true,
+    "acceptOnsite": true
+  },
+  "experienceSummary": {
+    "currentOrMostRecentTitle": "",
+    "background": "A few sentences of background context the agent should know when judging fit.",
+    "levelMismatchThresholdYears": 8,
+    "_defaultExperienceYears_comment": "field = your main profession in a few words (e.g. 'barista', 'accounting', 'software testing'). years = your total years in that field. The agent uses years only for general questions about that field. Leave years as null if unsure - the agent will ask instead of guessing.",
+    "defaultExperienceYears": {
+      "field": "Your main profession in a few words",
+      "years": null
+    },
+    "_skillYears_comment": "One entry per skill or tool you may be asked about: 'Skill name': years. Replace the placeholder below. A value of 0 means you have no experience with it. null or a missing skill means the agent will stop and ask you rather than guess.",
+    "skillYears": {
+      "Example Skill Name": null
+    },
+    "keySkills": []
+  },
+  "education": {
+    "school": "",
+    "city": "",
+    "degree": "",
+    "major": "",
+    "datesAttended": ""
+  },
+  "screeningQuestionDefaults": {
+    "salaryExpectationPolicy": "Describe your salary-answer logic here.",
+    "whyInterestedInRole": "",
+    "hasBachelorsDegree": true
+  },
+  "coverLetterBlurb": {
+    "template": "A short reusable blurb the agent can adapt per posting."
+  },
+  "logging": {
+    "csvEnabled": true
+  }
+}

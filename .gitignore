@@ -1,0 +1,18 @@
+# Personal data - never commit
+linkedin_config.json
+.env
+applications_log.csv
+
+# Chat-continuity notes for Claude - not meant as public documentation
+HANDOFF.md
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*.log
+
+# Local scratch/temp
+*.tmp
+
+# vsCode's workspace file
+linkedin-inapply-agent.code-workspace
