@@ -4,6 +4,10 @@ A config-driven Claude Skill that searches LinkedIn for job postings and submits
 
 Businesses using Linkedin are wasting job hunter time and dignity, so take back what you can.
 
+## Deprecated Project
+This project will not be maintained as the way AI retains retains page DOM with every page it loaded became unmanagable and because useless at scale and manages to get 6 applications completed at best while hunting through posting level pages for a plethora of keywords.
+Lesson learned, but fear not, the [roleRecon](https://github.com/slashmarkCA/roleRecon) project is switching to Python scraping first, and will expand beyond Easy Apply focus and more, which was a logical feature addition for this project anyway.
+
 ## Why it's built this way
 
 This project's explicit goal was to stay on Claude Desktop's free plan.
